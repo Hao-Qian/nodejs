@@ -6,7 +6,7 @@ crawlerApp = express()
 /*
 	list all files when http://localhost:8080/list/files accessed.
 */
-var dirTobeListed = "/Users/haoqian/Documents/ebooks"; //need a valid default value here for testing
+var dirTobeListed = ""; //need a valid default value here for testing
 var walkSync = function(dir, filelist) {
   var fs = fs || require('fs'),
       files = fs.readdirSync(dir);
